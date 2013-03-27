@@ -14,7 +14,8 @@ environments {
     development {
         dataSource {
             dbCreate = "create-drop" // one of 'create', 'create-drop', 'update', 'validate', ''
-            url = "jdbc:postgresql://localhost:5432/happytrails"
+            //url = "jdbc:postgresql://localhost:5432/happytrails"
+	          url= "jdbc:h2:mem:testDb;MVCC=TRUE"
         }
     }
     test {
@@ -33,7 +34,7 @@ environments {
             password = uri.userInfo.split(":")[1]
             pooled = true
             properties {
-                maxActive = 4
+                maxActive = -1
                 minEvictableIdleTimeMillis = 1800000
                 timeBetweenEvictionRunsMillis = 1800000
                 numTestsPerEvictionRun = 3

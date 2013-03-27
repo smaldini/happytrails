@@ -8,6 +8,10 @@ class Direction {
         instruction blank: false
     }
 
+		static mapping = {
+			cache true
+		}
+
     Integer stepNumber
     String instruction
     Route route
@@ -15,4 +19,6 @@ class Direction {
     String toString() {
         instruction
     }
+
+
 }
