@@ -132,8 +132,6 @@ grails.plugins.springsecurity.userLookup.userDomainClassName = 'happytrails.User
 grails.plugins.springsecurity.userLookup.authorityJoinClassName = 'happytrails.UserRole'
 grails.plugins.springsecurity.authority.className = 'happytrails.Role'
 
-grails.cache.proxyTargetClass =	true
-
 /* Use Spring Security to get Rater and Commentor:
    - http://stackoverflow.com/questions/3541142/grails-user-evaluator-for-commentable-with-spring-security-plugin
 */

@@ -14,8 +14,8 @@ environments {
     development {
         dataSource {
             dbCreate = "create-drop" // one of 'create', 'create-drop', 'update', 'validate', ''
-            //url = "jdbc:postgresql://localhost:5432/happytrails"
-	          url= "jdbc:h2:mem:testDb;MVCC=TRUE"
+            url = "jdbc:postgresql://localhost:5432/happytrails"
+	          //url= "jdbc:h2:mem:testDb;MVCC=TRUE"
         }
     }
     test {
